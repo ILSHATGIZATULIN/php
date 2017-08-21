@@ -1,4 +1,32 @@
-<документ html>
+<?php
+//echo '<pre>';
+//var_dump($_REQUEST);
+
+$message= false;
+
+if (isset($_REQUEST [ 'name']) and isset ($_REQUEST['phone']))
+{
+
+    $name= $_REQUEST ['name'];
+    $phone=$_REQUEST['phone'];
+
+    $row=  'здравтсвуйте,' .$name.
+        'Ваш номер:' .$phone.  PHP_EOL;
+    file_put_contents('./contacts.txt',
+        $row,
+        FILE_APPEND);
+
+
+    $message= 'Спасибо мы с вами свяжемся';
+else
+
+}
+}
+
+?>
+
+<!doctype html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +36,20 @@
     <title>Document</title>
 </head>
 <body>
+<?php if ($message==''): ?>
+<?=$message ?>
+    <?php else: ?>
+<form action="index.php" metod="post">
+<p>представтесь</p>
+<input type ="text"  name ="name">
+       <p>Укажите ваш номер</p>
+<input type ="text" name="phone">
+    <button type="submit">Отправить</button>
+</form>
+<?php endif; ?>
 
 </body>
+
 </html>
+
+
