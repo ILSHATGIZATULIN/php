@@ -4,24 +4,24 @@
 
 $message= false;
 
-if (isset($_REQUEST [ 'name']) and isset ($_REQUEST['phone']))
-{
+if (isset($_REQUEST [ 'name']) and isset ($_REQUEST['phone'])) {
 
-    $name= $_REQUEST ['name'];
-    $phone=$_REQUEST['phone'];
+    $name = $_REQUEST ['name'];
+    $phone = $_REQUEST['phone'];
 
-    $row=  'здравтсвуйте,' .$name.
-        'Ваш номер:' .$phone.  PHP_EOL;
+    $row = 'здравтсвуйте,' . $name .
+        'Ваш номер:' . $phone . PHP_EOL;
     file_put_contents('./contacts.txt',
         $row,
         FILE_APPEND);
 
 
-    $message= 'Спасибо мы с вами свяжемся';
-else
+    $message = 'Спасибо мы с вами свяжемся.';
+}
 
-}
-}
+
+
+
 
 ?>
 
@@ -36,7 +36,7 @@ else
     <title>Document</title>
 </head>
 <body>
-<?php if ($message==''): ?>
+<?php if ($message): ?>
 <?=$message ?>
     <?php else: ?>
 <form action="index.php" metod="post">
