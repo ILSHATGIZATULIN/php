@@ -1,10 +1,7 @@
 <?php
-
 $question = '';
 $answers = [];
 $result = '';
-
-
 $steps = [
     [
         'id' => 1,
@@ -17,8 +14,7 @@ $steps = [
             ],
             [
                 'text' => 'Вправо',
-                'function' => 'next',
-                'next_step' => 2,
+                'function' => 'endGame',
             ],
         ],
     ],
@@ -28,66 +24,58 @@ $steps = [
         'answers' => [
             [
                 'text' => 'Прыгать',
-                'function' => 'endgame',
-
+                'function' => 'endGame',
             ],
             [
-                'text' => 'бежать',
+                'text' => 'Бежать',
                 'function' => 'next',
                 'next_step' => 3,
             ],
         ],
     ],
-
     [
         'id' => 3,
-        'question' => 'Вперед или назад?',
+        'question' => 'Вперёд или назад?',
         'answers' => [
             [
-                'text' => 'Вперед',
-                'function' => 'endgame',
-
+                'text' => 'Вперёд',
+                'function' => 'endGame',
             ],
             [
-                'text' => 'назад',
+                'text' => 'Назад',
                 'function' => 'win',
-
             ],
         ],
     ],
 ];
-function findNextStep ($id, $steps){
-    $step =null; // создание переменой
-    foreach ($steps as $_step){// цикл
-        if ($_step ['id']==$id){ // если id шага желаемому
-            $step =$_step; // запись в переменную
+function findNextStep($id, $steps) {
+    $step = null; // создание переменной
+    foreach ($steps as $_step) { // цикл
+        if ($_step['id'] == $id) { // если id шага = желаемому
+            $step = $_step; // запись в переменную
         }
     }
-    return $step;
+    return $step; // возвращаем переменную
 }
-function generateQuestions($step){
-
-    return $step ['question'];
+function generateQuestion($step) {
+    return $step['question']; // возвращаем вопрос у шага
 }
-
-function generateAnswers($step)
-{
-    return $step ['answers'];
+function generateAnswers($step) {
+    return $step['answers']; // возвращаем варианты ответов
 }
-if (isset ($_POST['submit'])) {
-    $answer = json_decode( $_POST['answer'], true);
-    if ($answer ['function']==='next'){
+if (isset($_POST['submit'])) {
+    $answer = json_decode($_POST['answer'],true);
+    if ($answer['function'] === 'next') {
         $step = findNextStep($answer['next_step'], $steps);
-        $question = generateQuestions($step);
+        $question = generateQuestion($step);
         $answers = generateAnswers($step);
-    } else if ($answer['function']==='endgame') {
-        $result = 'вы проиграли';
-    } else if ($answer['function']==='win'){
-            $result = 'вы победили';
-        }
-
+    } else if ($answer['function'] === 'endGame') {
+        $result = 'Вы проиграли';
+    } else if ($answer['function'] === 'win') {
+        $result = 'Вы победили';
+    }
 } else {
     $step = findNextStep(1, $steps);
-    $question = generateQuestions($step);
+    $question = generateQuestion($step);
     $answers = generateAnswers($step);
 }

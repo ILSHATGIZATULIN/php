@@ -1,9 +1,6 @@
-
 <?php
-require './quest.php'
-
+require './quest.php';
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -15,26 +12,24 @@ require './quest.php'
     <title>Document</title>
 </head>
 <body>
-<form action= "index.php" method ="post">
+<form action="index.php" method="post">
     <div>
-        <?= $question?>
+        <?= $question ?>
     </div>
     <div>
-        <?php foreach ($answers as $answer): ?>
+        <?php foreach ($answers as $answer) : ?>
             <input
-                type ="radio"
-                name ="answer"
-                value =<?= json_encode($answer)  ?>
+                    type="radio"
+                    name="answer"
+                    value=<?= json_encode($answer) ?>
             >
-            <?=$answer ['text']?>
+            <?= $answer['text'] ?>
         <?php endforeach; ?>
     </div>
-    <input type ="submit" name ="submit" value="Отправить">
+    <input type="submit" name="submit" value="Отправить">
     <div>
         <?= $result ?>
     </div>
-
-
 </form>
 </body>
 </html>
