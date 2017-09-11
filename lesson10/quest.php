@@ -1,6 +1,6 @@
 <?php
 $question = '';
-$answers = [];
+$answers = '[]';
 $result = '';
 $steps = [
     [
@@ -64,7 +64,7 @@ function generateAnswers($step) {
     return $step['answers']; // возвращаем варианты ответов
 }
 if (isset($_POST['submit'])) {
-    $answer = json_decode($_POST['answer'],true);
+    $answer = json_decode( $_POST['answer'],true);
     if ($answer['function'] === 'next') {
         $step = findNextStep($answer['next_step'], $steps);
         $question = generateQuestion($step);
@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
         $result = 'Вы проиграли';
     } else if ($answer['function'] === 'win') {
         $result = 'Вы победили';
-    }
+        $answers = [];    }
 } else {
     $step = findNextStep(1, $steps);
     $question = generateQuestion($step);

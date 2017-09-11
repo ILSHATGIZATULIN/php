@@ -20,9 +20,9 @@ function genHash($step, $message, $function)
 {
 $hash = $step('');
 
-$messages = array_flip('$messages');
+$messages = array_flip($messages);
 if (isset($messages['$message'])) {
-$hash .= $messages['$message'] . '.';
+$hash . = $messages['$message'] . '.';
 }
 
 $functions = array_flip('$functions');
