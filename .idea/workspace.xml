@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f35b08a-0546-436f-853e-ee46942dbc7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lesson10/index.php" afterPath="$PROJECT_DIR$/lesson10/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lesson10/quest.php" afterPath="$PROJECT_DIR$/lesson10/quest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="quest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson10/quest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="77" column="8" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+            <state relative-caret-position="170">
+              <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -177,12 +176,12 @@
       <workItem from="1504623993150" duration="6148000" />
       <workItem from="1504797032755" duration="5787000" />
       <workItem from="1505022697247" duration="6754000" />
-      <workItem from="1505153130441" duration="3080000" />
+      <workItem from="1505153130441" duration="3392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44565000" />
+    <option name="totallyTimeSpent" value="44877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
@@ -345,8 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson10/quest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="77" column="8" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+        <state relative-caret-position="170">
+          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
           <folding />
         </state>
       </provider>

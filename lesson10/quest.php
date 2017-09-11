@@ -64,17 +64,18 @@ function generateAnswers($step) {
     return $step['answers']; // возвращаем варианты ответов
 }
 if (isset($_POST['submit'])) {
-    $answer = json_decode( $_POST['answer'],true);
+    $answer = json_decode($_POST['answer'],true);
     if ($answer['function'] === 'next') {
         $step = findNextStep($answer['next_step'], $steps);
         $question = generateQuestion($step);
         $answers = generateAnswers($step);
     } else if ($answer['function'] === 'endGame') {
         $result = 'Вы проиграли';
-
+$answers= [];
     } else if ($answer['function'] === 'win') {
         $result = 'Вы победили';
-        $answers = [];    }
+        $answers=[];
+           }
 } else {
     $step = findNextStep(1, $steps);
     $question = generateQuestion($step);
