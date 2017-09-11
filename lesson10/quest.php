@@ -1,6 +1,6 @@
 <?php
 $question = '';
-$answers = '[]';
+$answers = [];
 $result = '';
 $steps = [
     [
@@ -71,6 +71,7 @@ if (isset($_POST['submit'])) {
         $answers = generateAnswers($step);
     } else if ($answer['function'] === 'endGame') {
         $result = 'Вы проиграли';
+
     } else if ($answer['function'] === 'win') {
         $result = 'Вы победили';
         $answers = [];    }

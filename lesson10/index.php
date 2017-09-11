@@ -17,11 +17,11 @@ require './quest.php';
         <?= $question ?>
     </div>
     <div>
-        <?php foreach ($answers as $answer) ?>
+        <?php foreach ($answers as $answer): ?>
             <input
                     type="radio"
                     name="answer"
-                    value ="<?= json_encode($answer) ?>"
+                    value ="<?= json_encode ($answer) ?>"
             >
             <?= $answer['text'] ?>
         <?php endforeach; ?>
