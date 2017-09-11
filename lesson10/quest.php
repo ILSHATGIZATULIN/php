@@ -63,9 +63,18 @@ function generateQuestion($step) {
 function generateAnswers($step) {
     return $step['answers']; // возвращаем варианты ответов
 }
-if (isset($_POST['submit'])) {
-    $answer = json_decode($_POST['answer'],true);
+if (isset($_POST['submit']))
+{
+    echo '<pre>';
+    print_r($_POST);
+    print_r($_REQUEST);
+    echo '</pre>';
+    $answer = json_decode(urldecode($_POST['answer']),true);
+
+
+
     if ($answer['function'] === 'next') {
+
         $step = findNextStep($answer['next_step'], $steps);
         $question = generateQuestion($step);
         $answers = generateAnswers($step);

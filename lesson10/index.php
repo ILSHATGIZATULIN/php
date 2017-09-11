@@ -21,7 +21,7 @@ require './quest.php';
             <input
                     type="radio"
                     name="answer"
-                    value ="<?= json_encode ($answer) ?>"
+                    value="<?=urlencode(json_encode($answer))?>"
             >
             <?= $answer['text'] ?>
         <?php endforeach; ?>
