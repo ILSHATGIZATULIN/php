@@ -8,7 +8,7 @@ $steps = [
         'question' => 'Влево или вправо?',
         'answers' => [
             [
-                'text' => 'Влево',
+                'text' => 'влево',
                 'function' => 'next',
                 'next_step' => 2,
             ],
@@ -65,10 +65,7 @@ function generateAnswers($step) {
 }
 if (isset($_POST['submit']))
 {
-    echo '<pre>';
-    print_r($_POST);
-    print_r($_REQUEST);
-    echo '</pre>';
+
     $answer = json_decode(urldecode($_POST['answer']),true);
 
 

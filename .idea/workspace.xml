@@ -18,21 +18,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lesson10/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            <state relative-caret-position="68">
+              <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1639">
-              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-              <folding>
-                <marker date="1505071527462" expanded="true" signature="2094:2169" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -40,8 +28,8 @@
       <file leaf-file-name="quest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson10/quest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="71" column="60" lean-forward="false" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+            <state relative-caret-position="-901">
+              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -65,8 +53,8 @@
         <option value="$PROJECT_DIR$/lesson9/homework/.gitignore" />
         <option value="$PROJECT_DIR$/lesson9/homework/index.php" />
         <option value="$PROJECT_DIR$/home/index.php" />
-        <option value="$PROJECT_DIR$/lesson10/index.php" />
         <option value="$PROJECT_DIR$/lesson10/quest.php" />
+        <option value="$PROJECT_DIR$/lesson10/index.php" />
       </list>
     </option>
   </component>
@@ -111,17 +99,7 @@
             <path>
               <item name="php" type="b2602c69:ProjectViewProjectNode" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lesson9" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lesson10" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -177,12 +155,12 @@
       <workItem from="1504623993150" duration="6148000" />
       <workItem from="1504797032755" duration="5787000" />
       <workItem from="1505022697247" duration="6754000" />
-      <workItem from="1505153130441" duration="5310000" />
+      <workItem from="1505153130441" duration="7533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46795000" />
+    <option name="totallyTimeSpent" value="49018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
@@ -335,18 +313,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lesson10/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        <state relative-caret-position="68">
+          <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson10/quest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="71" column="60" lean-forward="false" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+        <state relative-caret-position="-901">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
         </state>
       </provider>

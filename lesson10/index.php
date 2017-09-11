@@ -10,8 +10,10 @@ require './quest.php';
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/php/php/css/bootstrap.min.css.">
 </head>
 <body>
+
 <form action="index.php" method="post">
     <div>
         <?= $question ?>
@@ -24,6 +26,7 @@ require './quest.php';
                     value="<?=urlencode(json_encode($answer))?>"
             >
             <?= $answer['text'] ?>
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <?php endforeach; ?>
     </div>
     <input type="submit" name="submit" value="Отправить">
